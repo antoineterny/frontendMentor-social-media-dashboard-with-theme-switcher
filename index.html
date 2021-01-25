@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="headings">
+          <h1>Social Media Dashboard</h1>
+          <h3>Total Followers: 23,004</h3>
+        </div>
+        <div class="theme-switcher">
+          <span>Dark Mode</span>
+          <input type="checkbox" name="switch" id="switch" onclick="toggleTheme()" />
+        </div>
+      </header>
+
+      <main>
+        <div class="card card--facebook">
+          <div class="reseau reseau--facebook">@nathanf</div>
+          <div class="nombre">1987</div>
+          <div class="abonnes">Followers</div>
+          <div class="tendance hausse">12 Today</div>
+        </div>
+
+        <div class="card card--twitter">
+          <div class="reseau reseau--twitter">@nathanf</div>
+          <div class="nombre">1044</div>
+          <div class="abonnes">Followers</div>
+          <div class="tendance hausse">99 Today</div>
+        </div>
+
+        <div class="card card--instagram">
+          <div class="reseau reseau--instagram">@realnathanf</div>
+          <div class="nombre">11k</div>
+          <div class="abonnes">Followers</div>
+          <div class="tendance hausse">1099 Today</div>
+        </div>
+
+        <div class="card card--youtube">
+          <div class="reseau reseau--youtube">Nathan F.</div>
+          <div class="nombre">8239</div>
+          <div class="abonnes">Subscribers</div>
+          <div class="tendance baisse">144 Today</div>
+        </div>
+      </main>
+
+      <h2>Overview - Today</h2>
+      <section>
+        <div class="smcard smcard--facebook">
+          <div class="titres">
+            <h4>Page Views</h4>
+            <div class="logo"></div>
+          </div>
+          <div class="chiffres">
+            <div class="nombre">87</div>
+            <div class="tendance hausse">3%</div>
+          </div>
+        </div>
+
+        <div class="smcard smcard--facebook">
+          <div class="titres">
+            <h4>Likes</h4>
+            <div class="logo"></div>
+          </div>
+          <div class="chiffres">
+            <div class="nombre">52</div>
+            <div class="tendance baisse">2%</div>
+          </div>
+        </div>
+
+        <div class="smcard smcard--instagram">
+          <div class="titres">
+            <h4>Likes</h4>
+            <div class="logo"></div>
+          </div>
+          <div class="chiffres">
+            <div class="nombre">5462</div>
+            <div class="tendance hausse">2257%</div>
+          </div>
+        </div>
+
+        <div class="smcard smcard--instagram">
+          <div class="titres">
+            <h4>Profile Views</h4>
+            <div class="logo"></div>
+          </div>
+          <div class="chiffres">
+            <div class="nombre">52k</div>
+            <div class="tendance hausse">1375%</div>
+          </div>
+        </div>
+
+        <div class="smcard smcard--twitter">
+          <div class="titres">
+            <h4>Retweets</h4>
+            <div class="logo"></div>
+          </div>
+          <div class="chiffres">
+            <div class="nombre">117</div>
+            <div class="tendance hausse">303%</div>
+          </div>
+        </div>
+
+        <div class="smcard smcard--twitter">
+          <div class="titres">
+            <h4>Likes</h4>
+            <div class="logo"></div>
+          </div>
+          <div class="chiffres">
+            <div class="nombre">507</div>
+            <div class="tendance hausse">553%</div>
+          </div>
+        </div>
+
+        <div class="smcard smcard--youtube">
+          <div class="titres">
+            <h4>Likes</h4>
+            <div class="logo"></div>
+          </div>
+          <div class="chiffres">
+            <div class="nombre">107</div>
+            <div class="tendance baisse">19%</div>
+          </div>
+        </div>
+
+        <div class="smcard smcard--youtube">
+          <div class="titres">
+            <h4>Total Views</h4>
+            <div class="logo"></div>
+          </div>
+          <div class="chiffres">
+            <div class="nombre">1407</div>
+            <div class="tendance baisse">12%</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+    <script>
+      function toggleTheme() {
+        if (document.querySelector("#switch").checked) {
+          document.documentElement.classList.add("dark-theme")
+          document.querySelector("#switch").classList.add("dark-theme")
+        } else {
+          document.documentElement.classList.remove("dark-theme")
+          document.querySelector("#switch").classList.remove("dark-theme")
+        }
+      }
+    </script>
+  </body>
+</html>
